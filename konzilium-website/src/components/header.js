@@ -1,9 +1,7 @@
 // src/components/Header.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../components/header.css'; // We'll create this file next
-
-
+import '../components/header.css';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +12,11 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        {/* Logo */}
+        {/* Clickable Logo */}
         <div className="logo">
-          <img src={`${process.env.PUBLIC_URL}/images/logo.jpg`} alt="Konzílium Logo" />
+          <Link to="/" onClick={closeMenu}>
+            <img src={`${process.env.PUBLIC_URL}/images/logo.jpg`} alt="Konzílium Logo" />
+          </Link>
         </div>
 
         {/* Hamburger */}
@@ -36,7 +36,6 @@ function Header() {
             <li>
               <Link to="/news" onClick={closeMenu}>Novinky</Link>
             </li>
-            
             <li>
               <Link to="/contact" onClick={closeMenu}>Kontakt</Link>
             </li>
