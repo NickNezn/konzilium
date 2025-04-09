@@ -10,7 +10,7 @@ function HomePage() {
         <div className="hero-content">
           <h1>Vitajte v Konzíliu</h1>
           <p>Neurologické a Rehabilitačné Centrum</p>
-          <a href="/contact" className="hero-btn">Kontaktujte Nás</a>
+          <a href="/#/contact" className="hero-btn">Kontaktujte Nás</a>
         </div>
       </div>
 
