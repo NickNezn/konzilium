@@ -2,7 +2,7 @@
   "name": "konzilium-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NickNezn.github.io/konzilium",
+  "homepage": "https://nicknezn.github.io/konzilium",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/user-event": "^13.5.0",

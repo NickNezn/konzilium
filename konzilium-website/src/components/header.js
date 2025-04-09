@@ -16,7 +16,7 @@ function Header() {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          <img src="/images/logo.jpg" alt="Konzílium Logo" />
+          <img src={`${process.env.PUBLIC_URL}/images/logo.jpg`} alt="Konzílium Logo" />
         </div>
 
         {/* Hamburger */}

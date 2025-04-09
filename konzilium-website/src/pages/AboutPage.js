@@ -57,7 +57,7 @@ function AboutPage() {
         {/* Lead Doctor Section */}
         <div className="lead-doctor">
           <img 
-            src="/images/baby.jpg" 
+            src={`${process.env.PUBLIC_URL}/images/baby.jpg`} 
             alt="MUDr. Magdaléna Perichtová"
             className="lead-doctor-img"
           />
