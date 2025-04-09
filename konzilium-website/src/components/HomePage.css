@@ -1,0 +1,152 @@
+/* src/pages/HomePage.css */
+
+/* HERO SECTION */
+.hero {
+    /* Reference your hero image from the public folder */
+    background: url("../../public/images/hero.jpg") center/cover no-repeat;
+    height: 60vh; /* Adjust for desired hero height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;  /* White text */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Add a subtle full-hero overlay */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* 20% opacity overlay */
+    z-index: 0;
+  }
+  
+  /* Ensure the hero content sits on top and has no background styling */
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #16a085;
+  }
+  
+  /* SERVICES (THREE CARDS) */
+  .services {
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 2rem;               /* Space between cards */
+    justify-content: center;
+    flex-wrap: wrap;         /* Wrap on smaller screens */
+  }
+  
+  .card {
+    background: #fff;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 2rem;     /* Extra space below on wrap */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .card p {
+    margin: 0 1rem 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* ------ Responsive Media Queries ------ */
+  @media (max-width: 768px) {
+    .hero {
+      height: 50vh; /* Decrease hero height for smaller screens */
+    }
+    
+    .hero-content {
+      padding: 1.5rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-btn {
+      padding: 0.5rem 1rem;
+    }
+    
+    /* Cards: make them full width (90%) on mobile */
+    .card {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+  
+  /* Optional adjustments for extra small screens */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.75rem;
+    }
+    
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  }
+  

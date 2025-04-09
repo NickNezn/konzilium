@@ -1,0 +1,102 @@
+/* src/pages/PriceListPage.css */
+
+.price-page {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f9fafc;
+  }
+  
+  .price-hero {
+    background: url('../../public/images/about.jpg') center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .price-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+  
+  .price-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .price-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .price-hero-content p {
+    font-size: 1.25rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-table th,
+  .price-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .price-table th {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  .price-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 768px) {
+    .price-hero {
+      height: 30vh;
+    }
+  
+    .price-hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .price-hero-content p {
+      font-size: 1rem;
+    }
+  
+    .price-table th,
+    .price-table td {
+      padding: 0.75rem;
+      font-size: 0.95rem;
+    }
+  }
+  

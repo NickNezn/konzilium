@@ -1,0 +1,139 @@
+
+/* Hero/Intro Section */
+.about-hero {
+  background: url('../../public/images/about.jpg') center/cover no-repeat; /* Image from public/images */
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* New About Summary Section */
+.about-summary {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #2c3e50;
+}
+
+/* Main Content */
+.about-main {
+  margin-top: 2rem;
+}
+
+/* Lead Doctor Section */
+.lead-doctor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.lead-doctor-img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.lead-doctor-text {
+  flex: 1;
+}
+
+.lead-doctor-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.lead-doctor-text h4 {
+  margin: 0 0 1rem;
+  color: #2980b9;
+}
+
+.lead-doctor-text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Team Members Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h4 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.team-card p {
+  margin: 0;
+  color: #7f8c8d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 30vh;
+  }
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  .about-hero-content p {
+    font-size: 1rem;
+  }
+  .lead-doctor-img {
+    width: 100%;
+  }
+}

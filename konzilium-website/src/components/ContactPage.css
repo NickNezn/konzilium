@@ -1,0 +1,91 @@
+/* src/pages/ContactPage.css */
+
+.contact-page {
+    background-color: #f9fafc;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* --- CARDS SECTION (Hours / Addresses / Phone) --- */
+  .contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* horizontally center the cards */
+    align-items: flex-start;  /* or 'center' if you want them vertically aligned */
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    background: #fff;
+    min-width: 250px;
+    max-width: 300px; /* optional to limit card width, remove if you prefer */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #2980b9;
+  }
+  
+  .card h4 {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .card p, .card li {
+    line-height: 1.6;
+  }
+  
+  .card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* --- MAPS SECTION --- */
+  .maps-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* center the map-cards horizontally */
+    margin-bottom: 3rem;
+  }
+  
+  .map-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-width: 280px;
+    max-width: 400px; /* keep it narrower, remove if you prefer full width */
+    text-align: center; /* center the heading */
+  }
+  
+  .map-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #2980b9;
+  }
+  
+  /* --- RESPONSIVE MEDIA QUERIES --- */
+  @media (max-width: 768px) {
+    /* Stack the cards vertically on smaller screens */
+    .contact-cards, .maps-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card, .map-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem auto; /* ensures leftover space is on both sides */
+      }
+  }
+
+  
