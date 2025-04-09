@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/konzilium/static/css/main.9231b11d.css",
+    "main.js": "/konzilium/static/js/main.14695a1f.js",
+    "static/js/453.6599bbd1.chunk.js": "/konzilium/static/js/453.6599bbd1.chunk.js",
+    "static/media/hero.jpg": "/konzilium/static/media/hero.fce9fb9ea2dc05a0d984.jpg",
+    "static/media/about.jpg": "/konzilium/static/media/about.b4ac9e934ea7b05b9680.jpg",
+    "index.html": "/konzilium/index.html",
+    "main.9231b11d.css.map": "/konzilium/static/css/main.9231b11d.css.map",
+    "main.14695a1f.js.map": "/konzilium/static/js/main.14695a1f.js.map",
+    "453.6599bbd1.chunk.js.map": "/konzilium/static/js/453.6599bbd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9231b11d.css",
+    "static/js/main.14695a1f.js"
+  ]
+}
